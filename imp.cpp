@@ -169,7 +169,7 @@ void LinkedList::deleteElementByValue(int val) {
 // Get the reference to the data at position `pos`
 int& LinkedList::getElementByPosition(int pos) {
     if (pos < 0) {
-        throw out_of_range("Position out of range");
+        cout<<"Position out of range"<<endl;
     }
 
     Node* temp = head;
@@ -180,7 +180,7 @@ int& LinkedList::getElementByPosition(int pos) {
     }
 
     if (temp == nullptr) {
-        throw out_of_range("Position out of range");
+        cout<<"Position out of range"<<endl;
     }
 
     return temp->data;
